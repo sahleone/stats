@@ -1,30 +1,80 @@
-# Stats
+# Stats — Undergraduate Statistics Lecture Materials
 
-Lecture notes and materials for statistics topics.
+## Hypothesis Tests
 
-## Topics
+| # | Topic | Excel | PDF Notes | Slides | Questions | Answers | Python |
+|---|-------|-------|-----------|--------|-----------|---------|--------|
+| 1 | One-Sample Z-Test | - | - | - | - | - | - |
+| 2 | One-Sample T-Test | - | - | - | - | - | - |
+| 3 | One-Sample Proportion Z-Test | - | - | - | - | - | - |
+| 4 | Two-Sample Z-Test | - | - | - | - | - | - |
+| 5 | Two-Sample T-Test (Equal Var) | - | - | - | - | - | - |
+| 6 | Welch's T-Test | - | - | - | - | - | - |
+| 7 | Paired T-Test | - | - | - | - | - | - |
+| 8 | Two-Proportion Z-Test | - | - | - | - | - | - |
+| 9 | Chi-Square Goodness-of-Fit | :white_check_mark: | - | - | - | :white_check_mark: | :white_check_mark: |
+| 10 | Chi-Square Independence | :white_check_mark: | - | - | - | :white_check_mark: | :white_check_mark: |
+| 11 | Fisher's Exact Test | - | - | - | - | - | - |
+| 12 | Shapiro-Wilk Test | - | - | - | - | - | - |
+| 13 | One-Way ANOVA | - | - | :white_check_mark: | - | - | - |
+| 14 | Two-Way ANOVA | - | - | :white_check_mark: | - | - | - |
+| 15 | Sign Test | - | - | - | - | - | - |
+| 16 | Wilcoxon Signed-Rank | - | - | - | - | - | - |
+| 17 | Mann-Whitney U | - | - | - | - | - | - |
+| 18 | Kruskal-Wallis | - | - | - | - | - | - |
+| 19 | Correlation T-Test | - | - | - | - | - | - |
+| 20 | Regression Slope T-Test | - | - | - | - | - | - |
+| 21 | Regression F-Test | - | - | - | - | - | - |
+| 22 | Chi-Square Variance | - | - | - | - | - | - |
+| 23 | F-Test Two Variances | - | - | - | - | - | - |
 
-| Topic | Excel | Slides | Notes | Python |
-|-------|-------|--------|-------|--------|
-| Chi-Square | :white_check_mark: | - | - | :white_check_mark: |
-| Contingency Tables | - | :white_check_mark: | - | - |
-| Hypothesis Testing | - | :white_check_mark: | - | - |
-| Normal / CLT | - | :white_check_mark: | - | - |
-| One-Way ANOVA | - | :white_check_mark: | :white_check_mark: | - |
-| Two-Way ANOVA | - | :white_check_mark: | - | - |
+## Supplementary Materials
 
-### Additional Files
+| File | Description |
+|------|-------------|
+| [Test Selection Flowchart](supplementary/test_selection_flowchart.pdf) | Decision tree: which test should I use? |
+| [Master Formula Sheet](supplementary/master_formula_sheet.pdf) | 2-page cheat sheet of all formulas, CIs, and effect sizes |
+| [Critical Value Tables](supplementary/master_critical_value_tables.pdf) | Full z, t, chi-square, and F tables |
 
-| Topic | File | Description |
-|-------|------|-------------|
-| Chi-Square | `chi_square_answer_key.docx` | Answer key |
-| Chi-Square | `chi_square_detailed_examples.docx` | Detailed examples |
-| Chi-Square | `chi_square_practice_questions.docx` | Practice questions |
-| Chi-Square | `chi_square_goodness_of_fit.xlsx` | Goodness-of-fit Excel notes |
-| Chi-Square | `chi_square_goodness_of_fit_answers.xlsx` | Goodness-of-fit answer key (Excel) |
-| Chi-Square | `chi_square_goodness_of_fit_bonus.py` | Goodness-of-fit bonus Python script |
-| Chi-Square | `chi_square_independence.xlsx` | Independence test Excel notes |
-| Chi-Square | `chi_square_independence_answers.xlsx` | Independence test answer key (Excel) |
-| Chi-Square | `chi_square_independence_bonus.py` | Independence test bonus Python script |
-| Contingency Tables | `contingency_tables.pdf` | Contingency tables reference (PDF) |
-| Hypothesis Testing | `hypothesis_testing_qa.pptx` | Q&A slides |
+## Pre-Existing Materials
+
+These files predate the 6-file-per-topic structure and will be migrated as topics are built.
+
+| Folder | File | Description |
+|--------|------|-------------|
+| chi_square | `chi_square_answer_key.docx` | Answer key (legacy) |
+| chi_square | `chi_square_detailed_examples.docx` | Detailed examples (legacy) |
+| chi_square | `chi_square_practice_questions.docx` | Practice questions (legacy) |
+| contingency_tables | `contingency_tables.pptx` | Contingency tables slides |
+| contingency_tables | `contingency_tables.pdf` | Contingency tables reference |
+| hypothesis_testing | `hypothesis_testing.pptx` | Hypothesis testing overview slides |
+| hypothesis_testing | `hypothesis_testing_qa.pptx` | Hypothesis testing Q&A slides |
+| normal_clt | `normal_clt.pptx` | Normal distribution and CLT slides |
+| one_way_anova | `one_way_anova.pptx` | One-way ANOVA presentation |
+| one_way_anova | `one_way_anova_notes.docx` | One-way ANOVA notes |
+| two_way_anova | `two_way_anova.pptx` | Two-way ANOVA presentation |
+
+## Build Scripts
+
+| Script | Description |
+|--------|-------------|
+| `scripts/build_all.py` | Orchestrator for building topic materials |
+| `scripts/build_supplementary.py` | Generates supplementary PDFs |
+| `scripts/topic_registry.py` | Central registry of all 23 topics with metadata |
+| `scripts/excel_styles.py` | Shared Excel formatting helpers |
+| `scripts/pdf_styles.py` | Shared PDF formatting helpers |
+| `scripts/pptx_styles.py` | Shared PowerPoint formatting helpers |
+| `scripts/recalc.py` | Excel formula recalculation |
+| `scripts/verify.py` | Verification script |
+| `scripts/soffice.py` | LibreOffice helper |
+| `scripts/setup.sh` | Environment setup |
+| `scripts/requirements.txt` | Python dependencies |
+
+### Quick Start
+
+```bash
+bash scripts/setup.sh                          # Install dependencies
+python scripts/build_all.py --status           # Show build progress
+python scripts/build_all.py --topic <name>     # Build one topic
+python scripts/build_all.py --verify all       # Verify all files
+```
