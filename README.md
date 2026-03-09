@@ -28,6 +28,13 @@
 | 22 | Chi-Square Variance | - | - | - | - | - | - |
 | 23 | F-Test Two Variances | - | - | - | - | - | - |
 
+## Foundational Topics
+
+| Topic | Excel | PDF Notes | Slides | Questions | Answers | Python |
+|-------|-------|-----------|--------|-----------|---------|--------|
+| Normal Distribution | :white_check_mark: | :white_check_mark: | - | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Random Variables | :white_check_mark: | :white_check_mark: | - | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+
 ## Supplementary Materials
 
 | File | Description |
