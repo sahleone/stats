@@ -16,8 +16,8 @@
 | 10 | Chi-Square Independence | :white_check_mark: | - | - | - | :white_check_mark: | :white_check_mark: |
 | 11 | Fisher's Exact Test | - | - | - | - | - | - |
 | 12 | Shapiro-Wilk Test | - | - | - | - | - | - |
-| 13 | One-Way ANOVA | - | - | :white_check_mark: | - | - | - |
-| 14 | Two-Way ANOVA | - | - | :white_check_mark: | - | - | - |
+| 13 | One-Way ANOVA | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| 14 | Two-Way ANOVA | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | 15 | Sign Test | - | - | - | - | - | - |
 | 16 | Wilcoxon Signed-Rank | - | - | - | - | - | - |
 | 17 | Mann-Whitney U | - | - | - | - | - | - |
@@ -57,9 +57,6 @@ These files predate the 6-file-per-topic structure and will be migrated as topic
 | hypothesis_testing | `hypothesis_testing.pptx` | Hypothesis testing overview slides |
 | hypothesis_testing | `hypothesis_testing_qa.pptx` | Hypothesis testing Q&A slides |
 | normal_clt | `normal_clt.pptx` | Normal distribution and CLT slides |
-| one_way_anova | `one_way_anova.pptx` | One-way ANOVA presentation |
-| one_way_anova | `one_way_anova_notes.docx` | One-way ANOVA notes |
-| two_way_anova | `two_way_anova.pptx` | Two-way ANOVA presentation |
 
 ## Build Scripts
 
