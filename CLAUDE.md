@@ -4,7 +4,7 @@
 
 This repo contains undergraduate statistics lecture materials. Your job is to generate complete, publication-ready lecture materials for each hypothesis test topic listed below, plus several supplementary reference files. Work through them **one topic at a time**, committing after each.
 
-**Note:** This file supersedes any previous conventions in REORGANIZE.md. The `_notes.pdf` replaces the old `_notes.docx` format. Each topic now produces 6 files (not 4). If any pre-existing files in this repo don't match the new structure, migrate them: split combined notes+questions files into separate files, rename to match the conventions below, and delete any orphaned duplicates.
+**Note:** This file supersedes any previous conventions in REORGANIZE.md. Each topic now produces a *bundle* of assets (Excel workbook, multi-PDF packet, slide deck, practice files, Python script). If any pre-existing files in this repo don't match the new structure, migrate them: split combined notes+questions files into separate files, rename to match the conventions below, and delete any orphaned duplicates.
 
 ---
 
@@ -30,38 +30,78 @@ libreoffice --headless --calc --convert-to xlsx <file.xlsx>
 
 ---
 
+## Template Library
+
+Use the files in `templates/` whenever you start a new topic.
+
+- `topic_template.xlsx` — prebuilt sheets (Notes, Worked Example, Practice 1–2) with named styles.
+- `howto_template.md`, `worked_examples_template.md`, `practice_set_template.md`, `confidence_interval_notes_template.md` — Markdown scaffolds for the PDFs.
+- `topic_master.pptx` — slide master with approved fonts/colors/layouts.
+- `topic_bonus.py` — Python skeleton for the bonus script.
+
+Copy templates into the topic folder before editing (e.g., `cp templates/topic_template.xlsx hypothesis_testing/two_sample_t_test_equal_var/excel/`). Keep the originals untouched; update the templates directory first if standards change.
+
+---
+
+## Accessibility Requirements
+
+Follow `docs/hypothesis_testing/accessibility.md` for every deliverable:
+
+- Minimum text sizes: 12 pt in PDFs, 18 pt on slides; headings 16 pt+/28 pt+.
+- Approved palette: Dark Navy `#0B1D3A`, Teal `#14B8A6`, Accent Blue `#1C7293`, Slate `#334155` (contrast ≥ 4.5:1).
+- Provide alt-text for all figures/tables/charts; include captions where appropriate.
+- Use semantic headings in Markdown; export tagged PDFs.
+- Excel: label headers, avoid color-only cues, add alt-text to charts, keep formulas visible.
+- Slides: use layouts from `topic_master.pptx`, add presenter notes describing visuals, run PowerPoint’s accessibility checker before saving.
+- Python console output: text-only messaging with clear labels.
+
+Document any unavoidable exceptions in commit messages.
+
+---
+
 ## Target Folder Structure
 
-Every hypothesis test topic gets its own `snake_case` folder with **6 files**:
+Every hypothesis test topic gets its own `snake_case` folder with standardized subdirectories:
 
 ```
 stats/
-├── README.md
-├── CLAUDE.md
-├── supplementary/
-│   ├── test_selection_flowchart.pdf
-│   ├── master_formula_sheet.pdf
-│   └── master_critical_value_tables.pdf
+├── templates/                       # master Excel/PDF/PPT/Python starters
+├── docs/hypothesis_testing/         # shared references, accessibility checklist, status index
 ├── one_sample_z_test/
-│   ├── one_sample_z_test.xlsx          # Excel notes (definitions, formulas, worked example)
-│   ├── one_sample_z_test_notes.pdf     # PDF lecture notes (same content, print-ready)
-│   ├── one_sample_z_test.pptx          # Lecture slides
-│   ├── one_sample_z_test_questions.xlsx # Practice questions ONLY (no answers)
-│   ├── one_sample_z_test_answers.xlsx   # Full worked answers to the practice questions
-│   └── one_sample_z_test_bonus.py       # Python script reproducing all examples
+│   ├── excel/
+│   │   └── one_sample_z_test.xlsx            # Notes, Worked Example, Practice 1–2 sheets
+│   ├── notes/
+│   │   ├── howto.pdf                        # Detailed procedure + assumptions
+│   │   ├── worked_examples.pdf
+│   │   ├── practice_set.pdf                 # Problems + solutions at the end
+│   │   └── confidence_interval_notes.pdf
+│   ├── slides/
+│   │   └── one_sample_z_test.pptx
+│   ├── practice/ (optional)                 # Extra Excel practice files if needed
+│   ├── answers/ (optional)                  # Companion answer keys for extra practice
+│   └── bonus/
+│       └── one_sample_z_test_bonus.py       # Python script reproducing examples
 ├── one_sample_t_test/
-│   └── ... (same 6-file pattern)
+│   └── ... (same layout)
 └── ...
 ```
+
+Shared theoretical PDFs (overview, Type I/II errors, power, CI master, normal refresher) live under `docs/hypothesis_testing/core/`.
+
+Track shared resources and per-topic completion status in `docs/hypothesis_testing/index.md`.
 
 ---
 
 ## File Naming Rules
 
 - All folder and file names: `snake_case`, lowercase, underscores, no numbered prefixes.
-- Suffixes: `_notes.pdf`, `_questions.xlsx`, `_answers.xlsx`, `_bonus.py`.
-- The main Excel file and pptx match the folder name exactly (e.g., `paired_t_test.xlsx`).
-- `_notes.pdf` **replaces** the old `_notes.docx` convention. Do not generate .docx files.
+- Excel workbooks live in `excel/<topic>.xlsx` (filename matches topic folder).
+- PDF packet resides in `notes/`:
+  - `howto.pdf`, `worked_examples.pdf`, `practice_set.pdf`, `confidence_interval_notes.pdf`, plus optional `power_notes.pdf`.
+- Slide deck lives in `slides/<topic>.pptx` (filename matches topic).
+- Optional extra practice/answer Excel files live in `practice/` and `answers/` subfolders.
+- Python bonus script lives in `bonus/<topic>_bonus.py`.
+- Do **not** create `.docx` lecture notes; Markdown → PDF only.
 
 ---
 

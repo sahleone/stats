@@ -1,0 +1,6 @@
+Source: /Users/rhysjervis/Downloads/MA235_Hypothesis_Testing step 1.docx
+Topic: Checklist for writing H0 vs H1
+Key points:
+- Repeats rule that H0 must contain an equals part; if the claim lacks equality, flip it and use the complement for H0.
+- Provides bullet mappings from textual claims ("mean greater than") to appropriate symbolic H0 and H1 pairs.
+- Ends with a reminder to revisit Week 13 notes and "file with key words" (not included), so cross-references are missing.

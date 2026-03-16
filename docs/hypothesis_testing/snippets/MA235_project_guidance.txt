@@ -1,0 +1,8 @@
+Source: /Users/rhysjervis/Downloads/MA235 Project hypothesis test guidance.docx
+Topic: Project instructions for two-sample t-test
+Key points:
+- Frames research question as "is there any difference between the means?" and enforces a two-tailed independent-samples t-test.
+- Lists steps: define groups, choose measurement, form H0 (μ1 = μ2) vs H1 (μ1 ≠ μ2), estimate unknown σ via sample s values, compute pooled standard error and t.
+- Requires α = 0.05 with α/2 = 0.025 critical values, rounding df up for conservatism.
+- Decision logic: reject if calculated t falls in tail; otherwise fail to reject, then write contextual conclusion template (“At the 5% level…”).
+- Omits expectations for descriptive statistics, visuals, or deliverable structure beyond the hypothesis test narrative.

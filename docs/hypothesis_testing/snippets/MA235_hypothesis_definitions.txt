@@ -1,0 +1,7 @@
+Source: /Users/rhysjervis/Downloads/MA235_Stats_HypTstg_Definition.pdf
+Topic: One-page terminology glossary
+Key points:
+- Defines H0, H1, Type I/II errors, α, β, test statistic, critical region/value, significance level, decision, and conclusion statements.
+- Explicitly says H0 always carries equality and should never be “accepted,” only rejected or not rejected.
+- Highlights that alternative hypothesis drives tail direction and that significance level mirrors confidence level complement.
+- Lacks visuals/examples but provides quick reference bullet list suitable for cheat sheet integration.

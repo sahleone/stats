@@ -1,0 +1,6 @@
+Sources: stats/hypothesis_testing/hypothesis_testing.pptx and hypothesis_testing_qa.pptx
+Topic: Repo-native MA235 decks
+Key points:
+- `hypothesis_testing.pptx` is an 8-slide overview tailored to the class project: defines hypothesis testing, H0/H1, α = 0.05, Type I/II errors, two-sample t-test setup (n=15 per group, df=28, t*≈±2.048), and a 5-step workflow.
+- `hypothesis_testing_qa.pptx` is a 22-slide Q&A deck posing conceptual multiple-choice questions (α, error types, df, interpreting t vs t*, meaning of "fail to reject", CIs, randomness) with answers and "Why it matters" callouts.
+- Both decks already align with the project requirement (two-sample independent t-test with α=0.05) but there are no accompanying notes, worksheets, or updated PDFs per repo conventions.

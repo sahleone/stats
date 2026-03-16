@@ -1,0 +1,9 @@
+Source: /Users/rhysjervis/Downloads/MA_235-44_stat_week_13.doc
+Topic: Week 13 lecture — Hypothesis Testing workflow
+Key points:
+- Part 1 reiterates mapping claims to symbolic hypotheses (H0 vs H1) with cases for =, ≤, ≥, <, >, though embedded equation objects failed to render.
+- Part 2 teaches how the alternative hypothesis dictates left/right/two-tail tests and how to split α across tails before pulling z critical values from Table A-2.
+- Part 3 defines critical regions (e.g., z > +1.95) with text-only explanations; no visuals or modern notation.
+- Part 4 derives the z-test statistic for sampling distributions of means, referencing HyperStat images (links now broken) and using a numeric example (M=580, μ=500, SE=44.72, z=1.79).
+- Part 5 covers the reject/fail-to-reject decision rule and includes a worked comparison against a rejection boundary.
+- Overall tone assumes z-tests for population means; no mention of t-tests or p-values, so alignment with the repo’s two-sample t-test emphasis will need augmentation.

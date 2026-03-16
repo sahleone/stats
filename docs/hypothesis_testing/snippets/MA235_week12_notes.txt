@@ -1,0 +1,8 @@
+Source: /Users/rhysjervis/Downloads/MA_235-44_stat_week_12.doc
+Topic: Week 12 lecture — Non-Standard Normal Distribution + identifying hypotheses
+Key points:
+- Walks through standardizing any normal distribution via the z-score formula z = (data - mean) / sd.
+- Step-by-step instructions emphasize sketching the bell curve, marking the mean, plotting the score, shading target regions, and using Table A-2 for cumulative areas.
+- Reminds students that z-table areas are always positive and correspond to "below" probabilities; "between" questions require subtraction of two lookup values.
+- Second half transitions into identifying hypotheses: null hypothesis always carries the equality, research hypothesis mirrors the logical opposite.
+- Language references missing equation objects ("EMBED Equation" placeholders) and page references to the Triola text, so modernization/cleanup is required.

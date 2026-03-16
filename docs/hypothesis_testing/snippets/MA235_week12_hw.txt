@@ -1,0 +1,6 @@
+Source: /Users/rhysjervis/Downloads/MA235 Week 12 HW.docx
+Topic: Homework prompt
+Key points:
+- Assignment is literally one line: "List the claim, null hypothesis, and alternative hypothesis symbolically" referencing Section 9.1 problems #11a, #17, and #21.
+- Provides no scaffolding, rubric, or worked example; assumes access to textbook problem statements.
+- Needs modernization (link to repo worksheets or embed actual problem contexts) if kept.

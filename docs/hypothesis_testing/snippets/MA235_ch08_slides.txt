@@ -1,0 +1,8 @@
+Source: /Users/rhysjervis/Downloads/MA235_PPT_ch08-1.pdf
+Topic: Pearson Addison-Wesley Chapter 8 slides (hypothesis testing basics)
+Key points:
+- Covers Section 8-1 overview (definitions of hypothesis, tests) and introduces the Rare Event Rule via the "Gender Choice" baby gender example.
+- Walks through comparing observed outcomes vs assumptions to motivate rejecting or keeping H0 (e.g., 52 vs 97 girls out of 100 births).
+- Section 8-2 slides catalog components: null/alternative hypotheses, test statistic, critical region/value, significance level, P-value, Type I/II errors.
+- Example uses proportion > 0.5 claim, normal approximation to binomial, and emphasizes when evidence is or is not sufficient.
+- Formatting is dated (Triola 10e) and leans on lecture narration; requires adaptation to the repo style and MA235 project context.
